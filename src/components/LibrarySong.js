@@ -1,5 +1,5 @@
 import React from "react";
-// import { playAudio } from "../util";
+import { playAudio } from "../util";
 
 const LibrarySong = ({
   isPlaying,
@@ -36,12 +36,8 @@ const LibrarySong = ({
     setSongs(newSongs);
 
     //check if song is playing if not then it wont play from library
-    // playAudio(isPlaying, audioRef);
-
-    // if (isPlaying) {
-    audioRef.current.play();
-    // setIsPlaying(!isPlaying);
-    // }
+    playAudio(isPlaying, audioRef);
+    // audioRef.current.play();
     //change the status of the play/pause button
   };
 
